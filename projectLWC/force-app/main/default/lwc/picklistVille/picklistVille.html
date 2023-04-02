@@ -1,0 +1,11 @@
+<template>
+      
+        <lightning-layout>
+            <lightning-layout-item size="6" medium-device-size="4" padding="around-small">
+                <select class="slds-select" id="select-01" required="" onchange={handleSelectedCities}>
+                    <option value="">Select…</option>
+                    <option for:each={villes} for:item="vll" key={vll.key} value={vll.BillingCity}>{vll.BillingCity}</option>
+                    </select>  
+            </lightning-layout-item>
+        </lightning-layout>
+</template>
